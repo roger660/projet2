@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Réflexe Dressing</title>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="CSS/bootstrap.min.css">
+        <link rel="stylesheet" href="CSS/Style.css">
+        <link rel="stylesheet" href="Delivery.html">
+        <link rel="stylesheet" href="Payment.html">
+        <link rel="stylesheet" href="Order-detail.html">
+        <link rel="stylesheet" href="Customer-order.html">
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <!-- En-tête de la page -->
+            <div class="row">
+                <div class="col-12">
+                    <header class="col-sm-12 col-lg-12">
+                        <div class="row">
+                            <div class="col-sm-2 col-lg-2 ">
+                                <img id="logo" src="Images/logo.png" alt="" title="">
+                            </div>
+                            <div class="col-sm-6 col-lg-6">
+                                <form class="form-inline mr-auto barRecherche">
+                                    <div class="ui-widget">
+                                        <label for="tags"></label>
+                                        <input id="tags"  class="form-control mr-sm-6" type="text" placeholder="Search" aria-label="Search" autofocus>
+                                    </div>
+                                    <button class="btn btn-outline-success btn-rounded btn-sm my-0" type="submit">Search</button>
+                                </form>
+                            </div>
+                            <div class="col-sm-2 col-lg-2">
+                                <img id="panier1" src="Images/panier.png" alt="" title="">
+                            </div>
+                            <div class="col-sm-2 col-lg-2">
+                                <img id="logoConnexion" src="Images/connexion.png" alt="" title="">
+                            </div>
+                        </div>
+                    </header>
+                </div>
+            </div>
+
+            <!-- Centre de la page -->
+            <!-- Colonne de gauche : menu infos -->
+            <div class="row justify-content-md-center">
+                <div id="fi_menu_info" class="col-3">
+                    <nav class="gauche-nav">
+                        <ul>
+                            <li class="fi_li"><a href="Customer-infos.html">Mes infos</a></li>
+                            <li class="fi_li"><a href="Customer-adress.html">Mes adresses</a></li>
+                            <li class="fi_li"><a href="Order-detail.html">Mes commandes</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div id="fi_menu_incs" class="col-7">
+                    <form class="fi_inscription"> 
+                        <fieldset class="fi_form-group"> 
+                            <div class="row"> 
+                                <legend class="fi_col-form-label col-sm-2 pt-0">Civilité*:</legend> 
+                                <div class="fi_form-check"> 
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="fi_civil_h" value="" checked> 
+                                    <label class="fi_civil_h" for="exampleRadios1">Homme</label> 
+                                </div> 
+                                <div class="fi_form-check"> 
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="fi_civil_f" value=""> 
+                                    <label class="fi_civil_f" for="exampleRadios2">Femme</label> 
+                                </div>
+                            </div> 
+                        </fieldset>  
+                        <div class= "fi_form-group row"> 
+                            <label for="Name" class="col-sm-2 fi_col-form-label">Nom*:</label> 
+                                <div class= "col-sm-9"> 
+                                    <input type= "text" class= "form-control" placeholder= "Nom"> 
+                                </div>
+                        </div>
+                        <div class= "fi_form-group row"> 
+                            <label for="Name2" class= "col-sm-2 fi_col-form-label">Prénom*:</label> 
+                                <div class= "col-sm-9"> 
+                                    <input type= "text" class= "form-control" placeholder= "Prenom"> 
+                                </div>
+                        </div>
+                        <div class= "fi_form-group row"> 
+                            <label for="inputEmail3" class="col-sm-2 fi_col-form-label">Email*:</label> 
+                                <div class="col-sm-9"> 
+                                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email"> 
+                                </div> 
+                        </div> 
+                        <div class="fi_form-group row"> 
+                            <label for="inputPassword3" class="col-sm-2 fi_col-form-label">Mot de Passe*:</label> 
+                                <div class="col-sm-9"> 
+                                    <input type="password" class="form-control" id= "inputPassword3" placeholder= "Mot de Passe"> 
+                                </div>
+                        </div>  
+                        <div class="fi_form-group row"> 
+                                <label for= "inputPassword3" class= "col-sm-2 fi_col-form-label">Nouveau Mot de Passe*:</label> 
+                                    <div class= "col-sm-9"> 
+                                        <input type= "password" class= "form-control" id= "inputPassword3" placeholder= "Nouveau Mot de Passe"> 
+                                    </div>
+                            </div>      
+                        <div class="fi_form-group row"> 
+                            <div class="col-sm-10"> 
+                                <div class="form-check"> 
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> 
+                                    <label class="fi_form-check-label" for="fi_defaultCheck1">Recevoir les offres partenaires</label> 
+                                </div>
+                            </div> 
+                        </div> 
+                        <div> 
+                            <div class="fi_form-group"> 
+                                <button type="submit" class="btn btn-outline-light btn-lg btn-block">Enregistrer</button>
+                            </div> 
+                        </div> 
+                    </form> 
+                </div>
+            </div>
+            
+            <!-- Bas de la page -->
+            <footer class="col-12" id="img-rs">
+                <div class="row">
+                    <div class="col-2">
+                        <img id="footer_fb" src="Images/Reseaux_sociaux/Facebook.png" alt="facebook"><br>
+                        <a href="https://www.facebook.com">Facebook</a>
+                    </div>
+                    <div class="col-2">
+                        <img id="footer_insta" src="Images/Reseaux_sociaux/Instagram.png" alt="instagram"><br>
+                        <a href="https://www.instagram.com">Instagram</a>
+                    </div>
+                    <div class="col-2">
+                            <img id="footer_twit" src="Images/Reseaux_sociaux/Twitter.png" alt="twitter"><br>
+                        <a href="https://www.twitter.com">Twitter</a>
+                    </div>
+                    <div class="col-2">
+                            <img id="footer_snap" src="Images/Reseaux_sociaux/Snapchat.png" alt="snapchat"><br>
+                        <a href="https://www.snapchat.com">Snapchat</a>
+                    </div>
+                    <div class="col-2">
+                            <img id="footer_yt" src="Images/Reseaux_sociaux/You_tube.png" alt="you-tube"><br>
+                        <a href="https://www.youtube.com">You Tube</a>
+                    </div>
+                    <div class="col-2">
+                            <img id="footer_pint" src="Images/Reseaux_sociaux/Pinterest.png" alt="pinterest"><br>
+                        <a href="https://www.pinterest.com">Pinterest</a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="JS/JQ/jquery-3.4.1.min.js"></script>
+    <script src="JS/JQ/jquery-ui.min.js"></script>
+    <script src="JS/Script.js"></script>
+    </body>
+</html>

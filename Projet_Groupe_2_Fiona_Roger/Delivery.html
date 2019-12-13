@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Réflexe Dressing</title>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="CSS/bootstrap.min.css">
+        <link rel="stylesheet" href="CSS/Style.css">
+        <link rel="stylesheet" href="Payment.html">
+        <link rel="stylesheet" href="Order-detail.html">
+        <link rel="stylesheet" href="Customer-infos.html">
+        <link rel="stylesheet" href="Customer-order.html">
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <!-- En-tête de la page -->
+            <div class="row">
+                <div class="col-12">
+                    <header class="col-sm-12 col-lg-12">
+                        <div class="row">
+                            <div class="col-sm-2 col-lg-2 ">
+                                <img id="logo" src="Images/logo.png">
+                            </div>
+                            <div class="col-sm-6 col-lg-6">
+                                <form class="form-inline mr-auto barRecherche">
+                                    <div class="ui-widget">
+                                        <label for="tags"></label>
+                                        <input id="tags"  class="form-control mr-sm-6" type="text" placeholder="Search" aria-label="Search" autofocus>
+                                    </div>
+                                    <button class="btn btn-outline-success btn-rounded btn-sm my-0" type="submit">Search</button>
+                                </form>
+                            </div>
+                            <div class="col-sm-2 col-lg-2">
+                                <img id="panier1" src="Images/panier.png">
+                            </div>
+                            <div class="col-sm-2 col-lg-2">
+                                <img id="logoConnexion" src="Images/connexion.png">
+                            </div>
+                        </div>
+                    </header>
+                </div>
+            </div>
+
+            <!-- Centre de la page -->
+            <!-- Colissimo -->
+            <div class="delivery">
+                <div class="row colissimo"> 
+                    <div class="col-12"> 
+                        <div class="card"> 
+                            <div class="card-body"> 
+                                <img id="tnt" src="Images/Transporteurs/Colissimo.jpg" alt="colissimo"><br>
+                                <p class="card-text">Choisissez ce transporteur pour un prix de : 7,80€ pour 1kg.</p>
+                                <div class="form-check justify-content-center">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1"></label>
+                                </div><br>
+                            </div> 
+                        </div> 
+                    </div>
+                </div> <br>
+                
+                <!-- TNT -->
+                <div class="row tnt"> 
+                    <div class="col-12"> 
+                        <div class="card"> 
+                            <div class="card-body"> 
+                                <img id="tnt" src="Images/Transporteurs/Tnt.png" alt="tnt"><br>
+                                <p class="card-text">Choisissez ce transporteur pour un prix de : 19,29€ pour 1kg.</p>
+                                <div class="form-check justify-content-center">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" checked>
+                                    <label class="form-check-label" for="exampleRadios2"></label>
+                                </div><br>
+                            </div> 
+                        </div> 
+                    </div>
+                </div> <br>
+                
+                <!-- La Poste -->
+                <div class="row poste"> 
+                    <div class="col-12"> 
+                        <div class="card"> 
+                            <div class="card-body"> 
+                                <img id="poste" src="Images/Transporteurs/la_poste.png" alt="poste"><br>
+                                <p class="card-text">Choisissez ce transporteur pour un prix de : 17,50€ pour 1kg.</p>
+                                <div class="form-check justify-content-center">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" checked>
+                                    <label class="form-check-label" for="exampleRadios3"></label>
+                                </div><br>
+                            </div> 
+                        </div> 
+                    </div>
+                </div> <br>
+                <div class="btn1">
+                    <a href="Payment.html" class="btn btn-primary">Payer ma commande</a> 
+            </div>
+            </div>
+            
+            <!-- Bas de la page -->
+            <footer class="col-12" id="img-rs">
+                <div class="row">
+                    <div class="col-2">
+                        <img id="footer_fb" src="Images/Reseaux_sociaux/Facebook.png" alt="facebook"><br>
+                        <a href="https://www.facebook.com">Facebook</a>
+                    </div>
+                    <div class="col-2">
+                        <img id="footer_insta" src="Images/Reseaux_sociaux/Instagram.png" alt="instagram"><br>
+                        <a href="https://www.instagram.com">Instagram</a>
+                    </div>
+                    <div class="col-2">
+                            <img id="footer_twit" src="Images/Reseaux_sociaux/Twitter.png" alt="twitter"><br>
+                        <a href="https://www.twitter.com">Twitter</a>
+                    </div>
+                    <div class="col-2">
+                            <img id="footer_snap" src="Images/Reseaux_sociaux/Snapchat.png" alt="snapchat"><br>
+                        <a href="https://www.snapchat.com">Snapchat</a>
+                    </div>
+                    <div class="col-2">
+                            <img id="footer_yt" src="Images/Reseaux_sociaux/You_tube.png" alt="you-tube"><br>
+                        <a href="https://www.youtube.com">You Tube</a>
+                    </div>
+                    <div class="col-2">
+                            <img id="footer_pint" src="Images/Reseaux_sociaux/Pinterest.png" alt="pinterest"><br>
+                        <a href="https://www.pinterest.com">Pinterest</a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="JS/JQ/jquery-3.4.1.min.js"></script>
+    <script src="JS/JQ/jquery-ui.min.js"></script>
+    <script src="JS/Script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Réflexe Dressing</title>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="CSS/bootstrap.min.css">
+        <link rel="stylesheet" href="CSS/Style.css">
+        <link rel="stylesheet" href="Delivery.html">
+        <link rel="stylesheet" href="Order-detail.html">
+        <link rel="stylesheet" href="Customer-infos.html">
+        <link rel="stylesheet" href="Customer-order.html">
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <!-- En-tête de la page -->
+            <div class="row">
+                <div class="col-12">
+                    <header class="col-sm-12 col-lg-12">
+                        <div class="row">
+                            <div class="col-sm-2 col-lg-2 ">
+                                <img id="logo" src="Images/logo.png" alt="" title="">
+                            </div>
+                            <div class="col-sm-6 col-lg-6">
+                                <form class="form-inline mr-auto barRecherche">
+                                    <div class="ui-widget">
+                                        <label for="tags"></label>
+                                        <input id="tags"  class="form-control mr-sm-6" type="text" placeholder="Search" aria-label="Search" autofocus>
+                                    </div>
+                                    <button class="btn btn-outline-success btn-rounded btn-sm my-0" type="submit">Search</button>
+                                </form>
+                            </div>
+                            <div class="col-sm-2 col-lg-2">
+                                <img id="panier1" src="Images/panier.png" alt="" title="">
+                            </div>
+                            <div class="col-sm-2 col-lg-2">
+                                <img id="logoConnexion" src="Images/connexion.png" alt="" title="">
+                            </div>
+                        </div>
+                    </header>
+                </div>
+            </div>
+
+            <!-- Centre de la page -->
+            <!-- Formulaire de paiement -->
+            <div id="img_paye" class="row">
+                <div class="col-4 visa">
+                    <img src="Images/Cartes_bancaires/visa.png" alt="visa">
+                </div>
+                <div class="col-4 card">
+                    <img src="Images/Cartes_bancaires/Mastercard.png" alt="master">
+                </div>
+                <div class="col-4 paypal">
+                    <img src="Images/Cartes_bancaires/paypal.png" alt="paypal">
+                </div>
+            </div>
+
+            <form id="payment"> 
+                <label class="paye" for="formGroup">Valider la carte</label>
+                <input type="text" class="form-control" id="carte_paye" placeholder="Numéro de la carte ">
+                <div class="form-row align-items-center">
+                    <div class="col-auto my-1">
+                        <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Mois</label>
+                        <select class="custom-select mr-sm-2" id="choix_mois">
+                            <option selected>01</option>
+                            <option>02</option>
+                            <option>03</option>
+                            <option>04</option>
+                            <option>05</option>
+                            <option>06</option>
+                            <option>07</option>
+                            <option>08</option>
+                            <option>09</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                        </select>
+                    </div>
+                    <div class="col-auto my-1">
+                            <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Année</label>
+                            <select class="custom-select mr-sm-2" id="choix_ans">
+                                <option selected>2019</option>
+                                <option>2020</option>
+                                <option>2021</option>
+                                <option>2022</option>
+                                <option>2023</option>
+                                <option>2024</option>
+                                <option>2025</option>
+                                <option>2026</option>
+                                <option>2027</option>
+                                <option>2028</option>
+                                <option>2029</option>
+                                <option>2030</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="CCV" id="CCV">
+                        </div>
+                    <div id="memo_check" class="col-auto my-1">
+                        <div class="form-check form-check-inline"> 
+                            <input class="form-check-input" type="checkbox"> 
+                            <label class="form-check-label" for="inlineCheckbox2">Mémoriser ma carte</label> 
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-primary" type="submit">
+                    <a href="Customer-adress.html">Payer</a></button>
+            </form>
+            
+
+            <!-- Bas de la page -->
+            <footer class="col-12" id="img-rs">
+                <div class="row">
+                    <div class="col-2">
+                        <img id="footer_fb" src="Images/Reseaux_sociaux/Facebook.png" alt="facebook"><br>
+                        <a href="https://www.facebook.com">Facebook</a>
+                    </div>
+                    <div class="col-2">
+                        <img id="footer_insta" src="Images/Reseaux_sociaux/Instagram.png" alt="instagram"><br>
+                        <a href="https://www.instagram.com">Instagram</a>
+                    </div>
+                    <div class="col-2">
+                            <img id="footer_twit" src="Images/Reseaux_sociaux/Twitter.png" alt="twitter"><br>
+                        <a href="https://www.twitter.com">Twitter</a>
+                    </div>
+                    <div class="col-2">
+                            <img id="footer_snap" src="Images/Reseaux_sociaux/Snapchat.png" alt="snapchat"><br>
+                        <a href="https://www.snapchat.com">Snapchat</a>
+                    </div>
+                    <div class="col-2">
+                            <img id="footer_yt" src="Images/Reseaux_sociaux/You_tube.png" alt="you-tube"><br>
+                        <a href="https://www.youtube.com">You Tube</a>
+                    </div>
+                    <div class="col-2">
+                            <img id="footer_pint" src="Images/Reseaux_sociaux/Pinterest.png" alt="pinterest"><br>
+                        <a href="https://www.pinterest.com">Pinterest</a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="JS/JQ/jquery-3.4.1.min.js"></script>
+    <script src="JS/JQ/jquery-ui.min.js"></script>
+    <script src="JS/Script.js"></script>
+    </body>
+</html>

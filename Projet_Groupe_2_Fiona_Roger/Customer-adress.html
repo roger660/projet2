@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Réflexe Dressing</title>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="CSS/bootstrap.min.css">
+        <link rel="stylesheet" href="CSS/Style.css">
+        <link rel="stylesheet" href="Delivery.html">
+        <link rel="stylesheet" href="Payment.html">
+        <link rel="stylesheet" href="Order-detail.html">
+        <link rel="stylesheet" href="Customer-infos.html">
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <!-- En-tête de la page -->
+            <div class="row">
+                <div class="col-12">
+                    <header class="col-sm-12 col-lg-12">
+                        <div class="row">
+                            <div class="col-sm-2 col-lg-2 ">
+                                <img id="logo" src="Images/logo.png" alt="" title="">
+                            </div>
+                            <div class="col-sm-6 col-lg-6">
+                                <form class="form-inline mr-auto barRecherche">
+                                    <div class="ui-widget">
+                                        <label for="tags"></label>
+                                        <input id="tags"  class="form-control mr-sm-6" type="text" placeholder="Search" aria-label="Search" autofocus>
+                                    </div>
+                                    <button class="btn btn-outline-success btn-rounded btn-sm my-0" type="submit">Search</button>
+                                </form>
+                            </div>
+                            <div class="col-sm-2 col-lg-2">
+                                <img id="panier1" src="Images/panier.png" alt="" title="">
+                            </div>
+                            <div class="col-sm-2 col-lg-2">
+                                <img id="logoConnexion" src="Images/connexion.png" alt="" title="">
+                            </div>
+                        </div>
+                    </header>
+                </div>
+            </div>
+
+            <!-- Centre de la page -->
+            <!-- Colonne de gauche : menu infos -->
+            <div class="row justify-content-md-center">
+                <div id="fi_menu_info" class="col-3">
+                    <nav>
+                        <ul class="fi_menu_d">
+                            <li class="fi_li"><a href="Customer-infos.html">Mes infos</a></li>
+                            <li class="fi_li"><a href="Customer-adress.html">Mes adresses</a></li>
+                            <li class="fi_li"><a href="Order-detail.html">Mes commandes</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- Colonne de droite : infos client -->
+                <div id="fi_menu_adresse" class="col-6">
+                    <div id="fi_dialog-form" title="Create new address">
+                        <p class="validateTips">Mes Adresses</p>
+                            <form>
+                                <fieldset>
+                                    <label for="num_rue">Numéro</label>
+                                    <input type="text" name="name" id="fi_Num_Rue" value="" class="text ui-widget-content ui-corner-all">
+                                    <label for="rue">Nom de Rue</label>
+                                    <input type="text" name="name" id="fi_Rue" value="" class="text ui-widget-content ui-corner-all">
+                                    <label for="cp">Code Postale</label>
+                                    <input type="text" name="code-p" id="fi_CP" value="" class="text ui-widget-content ui-corner-all">
+                                    <label for="ville">Ville</label>
+                                    <input type="text" name="ville" id="fi_Ville" value="" class="text ui-widget-content ui-corner-all">
+                <!-- Allow form submission with keyboard without duplicating the dialog button -->
+                                    <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+                                </fieldset>
+                            </form>
+                    </div>
+                    <div id="users-contain" class="ui-widget">
+                        <h1>Mes Adresses</h1>
+                            <table id="users" class="ui-widget ui-widget-content">
+                                <thead>
+                                    <tr class="ui-widget-header ">
+                                        <th>Numéro de rue</th>
+                                        <th>Adresse</th>
+                                        <th>Code Postale</th>
+                                        <th>Ville</th>
+                                        <th>Supprimer</th>
+                                        <th>Modifier</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="trsup">
+                                        <td>102</td>
+                                        <td>Rue du 14 Juillet</td>
+                                        <td>62223</td>
+                                        <td>Anzin-Saint-Aubin</td>
+                                    </tr>
+                                </tbody>
+                            </table><br>
+                    </div>
+                    <button id="create-user">Créer une nouvelle adresse</button>
+                </div>
+            </div>
+            
+            <!-- Bas de la page -->
+            <footer class="col-12" id="img-rs">
+                <div class="row">
+                    <div class="col-2">
+                        <img id="footer_fb" src="Images/Reseaux_sociaux/Facebook.png" alt="facebook"><br>
+                        <a class="fb" href="https://www.facebook.com">Facebook</a>
+                    </div>
+                    <div class="col-2">
+                        <img id="footer_insta" src="Images/Reseaux_sociaux/Instagram.png" alt="instagram"><br>
+                        <a class="insta" href="https://www.instagram.com">Instagram</a>
+                    </div>
+                    <div class="col-2">
+                            <img id="footer_twit" src="Images/Reseaux_sociaux/Twitter.png" alt="twitter"><br>
+                        <a class="twitt" href="https://www.twitter.com">Twitter</a>
+                    </div>
+                    <div class="col-2">
+                            <img id="footer_snap" src="Images/Reseaux_sociaux/Snapchat.png" alt="snapchat"><br>
+                        <a class="snap" href="https://www.snapchat.com">Snapchat</a>
+                    </div>
+                    <div class="col-2">
+                            <img id="footer_yt" src="Images/Reseaux_sociaux/You_tube.png" alt="you-tube"><br>
+                        <a class="yt" href="https://www.youtube.com">You Tube</a>
+                    </div>
+                    <div class="col-2">
+                            <img id="footer_pint" src="Images/Reseaux_sociaux/Pinterest.png" alt="pinterest"><br>
+                        <a class="pint" href="https://www.pinterest.com">Pinterest</a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="JS/JQ/jquery-3.4.1.min.js"></script>
+    <script src="JS/JQ/jquery-ui.min.js"></script>
+    <script src="JS/Script.js"></script>
+    </body>
+</html>

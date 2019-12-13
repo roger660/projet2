@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Réflexe Dressing</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/booNavigation.css">
+    <link href='http://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="CSS/Style.css">
+</head>
+
+<body class="backcolor">
+
+    <header class="container-fluid" >
+        <div class="col-12 col-sm-12 col-lg-12 w-100">
+            <div class="row">
+                <div class=" col-4 col-sm-2 col-lg-2 ">
+                    <img id="logo" src="Images/logo.png" alt="" title="">
+                </div>
+                <div class="col-4 col-sm-6 col-lg-6">
+                    <form class="form-inline mr-auto barRecherche">
+                        <input id="tags" class="form-control mr-sm-6" type="text" placeholder="Search" aria-label="Search"
+                            autofocus>
+                        <button class="btn btn-outline-success btn-rounded btn-sm my-0" type="submit">Search
+                        </button>
+                    </form>
+                </div>
+                <div class="col-2 col-sm-2 col-lg-2">
+                    <img class="panier1 " src="Images/panier.png" alt="" title="">
+                </div>
+                <div class="col-2 col-sm-2 col-lg-2">
+                    <img id="logoConnexion" src="Images/connexion.png" alt="" title="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- fin de header   debut de mega menu     -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 col-lg-12">
+                <div class="jquery-script-clear"></div>
+                <div class="wrapper">
+                    <nav id="booNavigation" class="booNavigation">
+                        <ul>
+                            <li class="navItem"><a href="#" title="FEMME">FEMME</a>
+                                <ul class="navContent">
+                                    <li>
+                                        <ul>
+                                            <li><a href="#" title="robes">robes</a><li/>
+                                            <li><a href="#" title="bas">bas</a><li/>
+                                            <li><a href="#" title="hauts">hauts</a><li/>
+                                            <li><a href="#" title="chaussures">chaussures</a><li/>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="#" title="sport">sport</a><li/>
+                                            <li><a href="#" title="pyjamas">pyjamas</a><li/>
+                                            <li><a href="#" title="sous-vetements">sous-vetements</a><li/>
+                                            <li><a href="#" title="accessoires">accessoires</a><li/>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="navItem">
+                                <a href="#" title="HOMME">HOMME</a>
+                                    <ul class="navContent">
+                                        <li>
+                                            <ul>
+                                                <li><a href="#" title="bas">bas</a><li/>
+                                                <li><a href="#" title="hauts">hauts</a><li/>
+                                                <li><a href="#" title="chaussures">chaussures</a><li/>
+                                                <li><a href="#" title="pyjamas">pyjamas</a><li/>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <li><a href="#" title="sous-vetements">sous-vetements</a><li/>
+                                                <li><a href="#" title="sport">sport</a><li/>
+                                                <li><a href="#" title="sous-vetements">sous-vetements</a><li/>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                            </li>
+                            <li class="navItem">
+                                <a href="#" title="ENFANT">ENFANT</a>
+                                    <ul class="navContent">
+                                        <li>
+                                            <ul>
+                                                <li><a href="#" title="robes">robes</a><li/>
+                                                <li><a href="#" title="hauts">hauts</a><li/>
+                                                <li><a href="#" title="bas">bas</a><li/>
+                                                <li><a href="#" title="sous-vetements">sous-vetements</a><li/>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <li><a href="#" title="chaussures">chaussures</a><li/>
+                                                <li><a href="#" title="pyjamas">pyjamas</a><li/>
+                                                <li><a href="#" title="sport">sport</a><li/>
+                                                <li><a href="#" title="accessoires">accessoires</a><li/>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------fin mega menu debut des colonnes gauche et droite  -->
+    <div class="row w-100">
+        <div class=" offset-2 col-sm-12 col-lg-10 w-100">
+            <table class="w-75" style="background-color:wheat;margin: 50px;">
+
+                <tr>
+                    <th>panier</th>
+                <tr>
+                    <td>nom de l'article</td>
+                    <td>prix unitaire</td>
+                    <td>quantite</td>
+                    <td>prix du sous-total</td>
+
+                </tr>
+                <tr>
+                    <td class="monArticle1"><span>chemise bleu H</span> </td>
+                    <td class="prixUnitairA1"><span class="prix">35</span><span>euros</span></td>
+                    <td class="quantiteA1"><span><label for="">selection </label>
+
+                            <select name="" class="quantite">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">6</option>
+
+                            </select></span></td>
+                    <td class="prixTotalArt"><span class="pta"></span></td>
+
+                </tr>
+                <tr>
+                    <td class="monArticle2"><span>chemise</span> </td>
+                    <td class="prixUnitairA2"><span class="prix">20</span><span>euros</span></td>
+                    <td class="quantiteA2"><span><label for="">selection </label>
+
+                            <select name="" class="quantite">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">6</option>
+
+                            </select></span></td>
+                    <td class="prixTotalArt"><span class="pta"></span></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="monArticle3"><span>manteau homme</span> </td>
+                    <td class="prixUnitairA3"><span class="prix">75</span><span>euros</span></td>
+                    <td class="quantiteA3"><span><label for="">selection </label>
+
+                            <select name="" class="quantite">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">6</option>
+
+                            </select></span></td>
+                    <td class="prixTotalArt"><span class="pta"></span></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="monArticle4"><span>t-shirt</span> </td>
+                    <td class="prixUnitairA4"><span class="prix">10</span><span>euros</span></td>
+                    <td class="quantiteA4"><span><label for="">selection </label>
+
+                            <select name="" class="quantite">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">6</option>
+
+                            </select></span></td>
+                    <td class="prixTotalArt"><span class="pta">0</span></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="monArticle5"><span>debardeur</span> </td>
+                    <td class="prixUnitairA5"><span class="prix">5</span><span>euros</span></td>
+                    <td class="quantiteA5"><span><label for="">selection </label>
+
+                            <select name="" class="quantite">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">6</option>
+
+                            </select></span></td>
+                    <td class="prixTotalArt"><span class="pta"></span></td>
+                    <td></td>
+                </tr>
+
+            </table>
+            <div class="offset-6 col-1">
+                <div>
+                    <p class="lasum" style="height: 60px;width: 100px;background-color: darkorange;">Total</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Bas de la page -->
+    <footer class="container-fluid" id="img-rs">
+        <div class="col-12 w-100">
+            <div class="row">
+                <div class="col-2">
+                    <img id="footer_fb" src="Images/Reseaux_sociaux/Facebook.png" alt="facebook"><br>
+                    <a href="https://www.facebook.com">Facebook</a>
+                </div>
+                <div class="col-2">
+                    <img id="footer_insta" src="Images/Reseaux_sociaux/Instagram.png" alt="instagram"><br>
+                    <a href="https://www.instagram.com">Instagram</a>
+                </div>
+                <div class="col-2">
+                    <img id="footer_twit" src="Images/Reseaux_sociaux/Twitter.png" alt="twitter"><br>
+                    <a href="https://www.twitter.com">Twitter</a>
+                </div>
+                <div class="col-2">
+                    <img id="footer_snap" src="Images/Reseaux_sociaux/Snapchat.png" alt="snapchat"><br>
+                    <a href="https://www.snapchat.com">Snapchat</a>
+                </div>
+                <div class="col-2">
+                    <img id="footer_yt" src="Images/Reseaux_sociaux/You_tube.png" alt="you-tube"><br>
+                    <a href="https://www.youtube.com">You Tube</a>
+                </div>
+                <div class="col-2">
+                    <img id="footer_pint" src="Images/Reseaux_sociaux/Pinterest.png" alt="pinterest"><br>
+                    <a href="https://www.pinterest.com">Pinterest</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="JS/JQ/booNavigation.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- <script src="JS/JQ/jquery-3.4.1.min.js"></script> -->
+    <script src="JS/JQ/jquery-ui.min.js"></script>
+    <script src="JS/JQ/bootstrap.min.js"></script>
+    <script src="JS/Script.js"></script>
+</body>
+</html>

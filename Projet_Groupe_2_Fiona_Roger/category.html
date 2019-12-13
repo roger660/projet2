@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Réflexe Dressing</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="css/booNavigation.css">
+    <link href='http://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="CSS/Style.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+</head>
+
+<body class="backcolor">
+    <div class="container-fluid">
+                <header class="col-sm-12 col-lg-12">
+                    <div class="row">
+                        <div class="col-sm-2 col-lg-2 ">
+                            <img id="logo" src="Images/logo.png" alt="" title="">
+                        </div>
+                        <div class="col-sm-6 col-lg-6">
+                            <form class="form-inline mr-auto barRecherche">
+                                <input id="tags" class="form-control mr-sm-6" type="text" placeholder="Search"
+                                    aria-label="Search" autofocus>
+                                <button class="btn btn-outline-success btn-rounded btn-sm my-0" type="submit">Search
+                                </button>
+                            </form>
+                        </div>
+                        <div class="col-sm-2 col-lg-2">
+                            <img class="panier1" src="Images/panier.png" alt="" title="">
+                        </div>
+                        <div class="col-sm-2 col-lg-2">
+                            <img id="logoConnexion" src="Images/connexion.png" alt="" title="">
+                        </div>
+                    </div>
+                </header>
+                <!-- fin de header   debut de mega menu     -->
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12 col-lg-12">
+                            <div class="jquery-script-clear"></div>
+                            <div class="wrapper">
+                                <nav id="booNavigation" class="booNavigation">
+                                    <ul>
+                                        <li class="navItem"><a href="#" title="FEMME">FEMME</a>
+                                            <ul class="navContent">
+                                                <li>
+                                                    <ul>
+                                                        <li><a href="#" title="robes">robes</a><li/>
+                                                        <li><a href="#" title="bas">bas</a><li/>
+                                                        <li><a href="#" title="hauts">hauts</a><li/>
+                                                        <li><a href="#" title="chaussures">chaussures</a><li/>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <ul>
+                                                        <li><a href="#" title="sport">sport</a><li/>
+                                                        <li><a href="#" title="pyjamas">pyjamas</a><li/>
+                                                        <li><a href="#" title="sous-vetements">sous-vetements</a><li/>
+                                                        <li><a href="#" title="accessoires">accessoires</a><li/>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="navItem">
+                                            <a href="#" title="HOMME">HOMME</a>
+                                                <ul class="navContent">
+                                                    <li>
+                                                        <ul>
+                                                            <li><a href="#" title="bas">bas</a><li/>
+                                                            <li><a href="#" title="hauts">hauts</a><li/>
+                                                            <li><a href="#" title="chaussures">chaussures</a><li/>
+                                                            <li><a href="#" title="pyjamas">pyjamas</a><li/>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <ul>
+                                                            <li><a href="#" title="sous-vetements">sous-vetements</a><li/>
+                                                            <li><a href="#" title="sport">sport</a><li/>
+                                                            <li><a href="#" title="sous-vetements">sous-vetements</a><li/>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                        </li>
+                                        <li class="navItem">
+                                            <a href="#" title="ENFANT">ENFANT</a>
+                                                <ul class="navContent">
+                                                    <li>
+                                                        <ul>
+                                                            <li><a href="#" title="robes">robes</a><li/>
+                                                            <li><a href="#" title="hauts">hauts</a><li/>
+                                                            <li><a href="#" title="bas">bas</a><li/>
+                                                            <li><a href="#" title="sous-vetements">sous-vetements</a><li/>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <ul>
+                                                            <li><a href="#" title="chaussures">chaussures</a><li/>
+                                                            <li><a href="#" title="pyjamas">pyjamas</a><li/>
+                                                            <li><a href="#" title="sport">sport</a><li/>
+                                                            <li><a href="#" title="accessoires">accessoires</a><li/>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!----------------------fin mega menu debut des colonnes gauche et droite  -->
+
+                <div class="row">
+                    <div class="col-sm-5 col-lg-4 colonne gauche">
+
+                        <p>Quelles articles souhaitez vous consulter?</p>
+                        <form action="" method="" name="">
+                            <input type="checkbox" name="homme" class="ROfiltrehomme">
+                            <label for="homme">HOMME</label>
+                            <input type="checkbox" name="femme" class="ROfiltrefemme">
+                            <label for="femme">FEMME</label>
+                            <input type="checkbox" name="enfant" class="ROenfantfiltre">
+                            <label for="enfant">ENFANT</label>
+                            <br>
+                        </form>
+
+                        <form action="" method="" type="checkbox">
+                            <input type="checkbox" name="robes" class="typeRobe typeFemme">
+                            <label for="robes">robes</label>
+                            <br>
+                            <input type="checkbox" name="hauts" class="typeHaut typeFemme">
+                            <label for="hauts">hauts</label>
+                            <br>
+                            <input type="checkbox" name="bas" class="typeBas typeFemme">
+                            <label for="bas">bas</label>
+                            <br>
+                            <input type="checkbox" name="sport" class="typeSport typeFemme">
+                            <label for="sport">sport</label>
+                            <br>
+                            <input type="checkbox" name="chaussures" class="typeChaussure typeFemme">
+                            <label for="chaussures">chaussures</label>
+                            <br>
+                            <input type="checkbox" name="pyjamas" class="typePyjama typeFemme">
+                            <label for="pyjamas">pyjamas</label>
+                            <br>
+                            <input type="checkbox" name="sous-vetements" class="typeSousVetement typeFemme">
+                            <label for="sous-vetements">sous-vetements</label>
+                            <br>
+                            <input type="checkbox" name="accessoires" class="typeAccessoire typeFemme">
+                            <label for="accessoires">accessoires</label>
+                        </form>
+                        <!-- fin collonne gauche -->
+
+
+                    </div>
+                    <div class=" col-sm-5 col-lg-5  ">
+                        <div class="row ROhommeHaut">
+                            <div class="offset-1 col-sm-2 col-lg-2">
+                                <img class="imagesReduitesRo" src="Images/category/Homme/Hauts/chemise-H-bleu.jpg" />
+                                <a href="product1.html"
+                                    style="color: aliceblue; font-size: small; line-height: 5px;">chemise bleu</a>
+                                <p>prix: 35 euros</p>
+                            </div>
+                            <div class="offset-1 col-sm-2 col-lg-2">
+                                <img class="imagesReduitesRo" src="Images/category/Homme/Hauts/chemise-homme.jpg" />
+                                <a href="product2.html" style="color: aliceblue; font-size: small; line-height: 5px;">
+                                    chemise homme </a>
+                                <p>prix: 20 euros</p>
+                            </div>
+                            <div class="offset-1 col-sm-2 col-lg-2">
+                                <img class="imagesReduitesRo" src="Images/category/Homme/Hauts/Manteau-Homme.jpg" />
+                                <a href="product3.html"
+                                    style="color: aliceblue; font-size: small; line-height: 5px;">Manteau-Homme</a>
+                                <p>prix: 75 euros</p>
+                            </div>
+                            <div class="offset-1 col-sm-2 col-lg-2">
+                                <img class="imagesReduitesRo" src="Images/category/Homme/Hauts/t-shirt-hommel.jpg" />
+                                <a href="product4.html"
+                                    style="color: aliceblue; font-size: small; line-height: 5px;">t-shirt homme</a>
+                                <p>prix: 10 euros</p>
+                            </div>
+                        </div>
+                        <div class="row ROfemmehaut ">
+                            <div class="offset-1 col-sm-2 col-lg-2">
+                                <img src="Images/category/Femme/Hauts/debardeur.jpg" alt=""
+                                    class="imagesReduitesRo          imageHautfemme">
+                                <a href="product5.html"
+                                    style="color: aliceblue; font-size: small; line-height: 5px;">debardeur</a>
+                                <p>prix: 5 euros</p>
+                            </div>
+                            <div class="offset-1 col-sm-2 col-lg-2">
+                                <img src="Images/category/Femme/Hauts/manteau.jpg" alt=""
+                                    class="imagesReduitesRo  imageHautfemme">
+                                <a href="" style="color: aliceblue; font-size: small; line-height: 5px;">manteau</a>
+                                <p>prix: 55 euros</p>
+                            </div>
+                            <div class="offset-1 col-sm-2 col-lg-2">
+                                <img src="Images/category/Femme/Hauts/pull_fe.jpg" alt=""
+                                    class="imagesReduitesRo  imageHautfemme">
+                                <a href="" style="color: aliceblue; font-size: small; line-height: 5px;">pull</a>
+                                <p>prix: 32 euros </p>
+                            </div>
+                            <div class="offset-1 col-sm-2 col-lg-2">
+                                <img src="Images/category/Femme/Hauts/vest-fe.jpg" alt=""
+                                    class="imagesReduitesRo  imageHautfemme">
+                                <a href="" style="color: aliceblue; font-size: small; line-height: 5px;">vest</a>
+                                <p>prix: 25 euros </p>
+                            </div>
+                        </div>
+                        <div class="row ROenfanthaut">
+                            <div class="offset-1 col-sm-2 col-lg-2">
+                                <img src="Images/category/Enfant/Hauts/chemise_fille.jpeg" alt=""
+                                    class="imagesReduitesRo">
+                                <a href="" style="color: aliceblue; font-size: small; line-height: 5px;">
+                                    chemise fille</a>
+                                <p>prix: 10 euros </p>
+                            </div>
+                            <div class="offset-1 col-sm-2 col-lg-2">
+                                <img src="Images/category/Enfant/Hauts/chemise_garcon.jpg" alt=""
+                                    class="imagesReduitesRo">
+                                <a href="" style="color: aliceblue; font-size: small; line-height: 5px;">
+                                    chemise gars </a>
+                                <p>prix: 10 euros </p>
+                            </div>
+                            <div class="offset-1 col-sm-2 col-lg-2">
+                                <img src="Images/category/Enfant/Hauts/manteau_enfant.jpg" alt=""
+                                    class="imagesReduitesRo">
+                                <a href="" style="color: aliceblue; font-size: small; line-height: 5px;">manteau</a>
+                                <p>prix: 30 euros </p>
+                            </div>
+                            <div class="offset-1 col-sm-2 col-lg-2">
+                                <img src="Images/category/Enfant/Hauts/pull_fille.jpg" alt="" class="imagesReduitesRo">
+                                <a href="" style="color: aliceblue; font-size: small; line-height: 5px;">pull fille</a>
+                                <p>prix: 15 euros </p>
+                            </div>
+                        </div>
+                        <div class="row ROenfantbas ">
+                            <div class="offset-1 col-sm-2 col-lg-2">
+                                <img src="Images/category/Enfant/Bas/jean_garcon.jpg" alt="" class="imagesReduitesRo">
+                                <a href="" style="color: aliceblue; font-size: small; line-height: 5px;">jean garçon</a>
+                                <p>prix: 15 euros </p>
+                            </div>
+                            <div class="offset-1 col-sm-2 col-lg-2">
+                                <img src="Images/category/Enfant/Bas/pantalon-enfant-fille.jpg" alt=""
+                                    class="imagesReduitesRo">
+                                <a href="" style="color: aliceblue; font-size: small; line-height: 5px;">
+                                    pantallon fille</a>
+                                <p>prix: 10 euros </p>
+                            </div>
+                            <div class="offset-1 col-sm-2 col-lg-2">
+                                <img src="Images/category/Enfant/Bas/pantalon_enfant.jpg" alt=""
+                                    class="imagesReduitesRo">
+                                <a href="" style="color: aliceblue; font-size: small; line-height: 5px;">
+                                    pantallon</a>
+                                <p>prix: 10 euros </p>
+                            </div>
+                            <div class="offset-1 col-sm-2 col-lg-2">
+                                <img src="Images/category/Enfant/Accessoires/ceinture-enfant.jpg" alt=""
+                                    class="imagesReduitesRo">
+                                <a href="" style="color: aliceblue; font-size: small; line-height: 5px;">ceinture</a>
+                                <p>prix: 2 euros </p>
+                            </div>
+                        </div>
+                        <div class="row ROfemmebas">
+                            <div class="offset-1 col-sm-2 col-lg-2">
+                                <img src="Images/category/Femme/Robes/robe_fleurs.jpg" alt=""
+                                    class="imagesReduitesRo  imageRobeFemme">
+                                <a href="" style="color: aliceblue; font-size: small; line-height: 5px;">robe fleurs</a>
+                                <p>prix: 5 euros </p>
+                            </div>
+                            <div class="offset-1 col-sm-2 col-lg-2">
+                                <img src="Images/category/Femme/Robes/robe_poids.jpg" alt=""
+                                    class="imagesReduitesRo  imageRobeFemme">
+                                <a href="" style="color: aliceblue; font-size: small; line-height: 5px;"> robe poids</a>
+                                <p>prix: 8 euros </p>
+                            </div>
+                            <div class="offset-1 col-sm-2 col-lg-2">
+                                <img src="Images/category/Femme/Bas/jeans_fe.jpg" alt=""
+                                    class="imagesReduitesRo imageBasFemme">
+                                <a href="" style="color: aliceblue; font-size: small; line-height: 5px;">jean</a>
+                                <p>prix: 10 euros </p>
+                            </div>
+                            <div class="offset-1 col-sm-2 col-lg-2">
+                                <img src="Images/category/Femme/Bas/pantalon-tailleur.jpg" alt=""
+                                    class="imagesReduitesRo  imageBasFemme">
+                                <a href="" style="color: aliceblue; font-size: small; line-height: 5px;">
+                                    tailleur</a>
+                                <p>prix: 20 euros </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="offset-1 col-sm-2 col-lg-2">
+
+                            </div>
+                            <div class="offset-1 col-sm-2 col-lg-2">
+
+                            </div>
+                            <div class="offset-1 col-sm-2 col-lg-2">
+
+                            </div>
+                            <div class="offset-1 col-sm-2 col-lg-2">
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="offset-1 col-sm-2 col-lg-2">
+
+                            </div>
+                            <div class="offset-1 col-sm-2 col-lg-2">
+
+                            </div>
+                            <div class="offset-1 col-sm-2 col-lg-2">
+
+                            </div>
+                            <div class="offset-1 col-sm-2 col-lg-2">
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="offset-1 col-sm-2 col-lg-2">
+
+                            </div>
+                            <div class="offset-1 col-sm-2 col-lg-2">
+
+                            </div>
+                            <div class="offset-1 col-sm-2 col-lg-2">
+
+                            </div>
+                            <div class="offset-1 col-sm-2 col-lg-2">
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="offset-1 col-sm-2 col-lg-2">
+
+                            </div>
+                            <div class="offset-1 col-sm-2 col-lg-2">
+
+                            </div>
+                            <div class="offset-1 col-sm-2 col-lg-2">
+
+                            </div>
+                            <div class="offset-1 col-sm-2 col-lg-2">
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="offset-1 col-sm-2 col-lg-2">
+
+                            </div>
+                            <div class="offset-1 col-sm-2 col-lg-2">
+
+                            </div>
+                            <div class="offset-1 col-sm-2 col-lg-2">
+
+                            </div>
+                            <div class="offset-1 col-sm-2 col-lg-2">
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!-- Bas de la page -->
+                <footer class="col-12" id="img-rs">
+                    <div class="row w-100">
+                        <div class="col-2 img-fluid">
+                            <img id="footer_fb" src="Images/Reseaux_sociaux/Facebook.png" alt="facebook"><br>
+                            <a href="https://www.facebook.com">Facebook</a>
+                        </div>
+                        <div class="col-2 img-fluid">
+                            <img id="footer_insta" src="Images/Reseaux_sociaux/Instagram.png" alt="instagram"><br>
+                            <a href="https://www.instagram.com">Instagram</a>
+                        </div>
+                        <div class="col-2 img-fluid">
+                            <img id="footer_twit" src="Images/Reseaux_sociaux/Twitter.png" alt="twitter"><br>
+                            <a href="https://www.twitter.com">Twitter</a>
+                        </div>
+                        <div class="col-2 img-fluid">
+                            <img id="footer_snap" src="Images/Reseaux_sociaux/Snapchat.png" alt="snapchat"><br>
+                            <a href="https://www.snapchat.com">Snapchat</a>
+                        </div>
+                        <div class="col-2 img-fluid">
+                            <img id="footer_yt" src="Images/Reseaux_sociaux/You_tube.png" alt="you-tube"><br>
+                            <a href="https://www.youtube.com">You Tube</a>
+                        </div>
+                        <div class="col-2 img-fluid">
+                            <img id="footer_pint" src="Images/Reseaux_sociaux/Pinterest.png" alt="pinterest"><br>
+                            <a href="https://www.pinterest.com">Pinterest</a>
+                        </div>
+                    </div>
+                </footer>
+
+
+            
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="JS/JQ/booNavigation.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- <script src="JS/JQ/jquery-3.4.1.min.js"></script> -->
+    <script src="JS/JQ/jquery-ui.min.js"></script>
+    <script src="JS/JQ/bootstrap.min.js"></script>
+    <script src="JS/Script.js"></script>
+</body>
+
+</html>

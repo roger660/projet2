@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Réflexe Dressing</title>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="CSS/bootstrap.min.css">
+        <link rel="stylesheet" href="CSS/Style.css">
+        <link rel="stylesheet" href="Delivery.html">
+        <link rel="stylesheet" href="Payment.html">
+        <link rel="stylesheet" href="Customer-infos.html">
+        <link rel="stylesheet" href="Customer-order.html">
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <!-- En-tête de la page -->
+            <div class="row">
+                <div class="col-12">
+                    <header class="col-sm-12 col-lg-12">
+                        <div class="row">
+                            <div class="col-sm-2 col-lg-2 ">
+                                <img id="logo" src="Images/logo.png" alt="" title="">
+                            </div>
+                            <div class="col-sm-6 col-lg-6">
+                                <form class="form-inline mr-auto barRecherche">
+                                    <div class="ui-widget">
+                                        <label for="tags"></label>
+                                        <input id="tags"  class="form-control mr-sm-6" type="text" placeholder="Search" aria-label="Search" autofocus>
+                                    </div>
+                                    <button class="btn btn-outline-success btn-rounded btn-sm my-0" type="submit">Search</button>
+                                </form>
+                            </div>
+                            <div class="col-sm-2 col-lg-2">
+                                <img id="panier1" src="Images/panier.png" alt="" title="">
+                            </div>
+                            <div class="col-sm-2 col-lg-2">
+                                <img id="logoConnexion" src="Images/connexion.png" alt="" title="">
+                            </div>
+                        </div>
+                    </header>
+                </div>
+            </div>
+
+            <!-- Centre de la page -->
+            <form id="payment"> 
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Images de l'article</th>
+                            <th scope="col">Nom de l'article</th>
+                            <th scope="col">Quantité</th>
+                            <th scope="col">Prix</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">
+                                <img class="chaussure" src="Images/category/Femme/Chaussures/botte.jpg">
+                            </th>
+                            <td>Bottes noires femme</td>
+                            <td>1</td>
+                            <td>59.99€</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <img class="accessoires" src="Images/category/Femme/Accessoires/gants.jpg">
+                            </th>
+                            <td>Gants</td>
+                            <td>1</td>
+                            <td>19.90€</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button class="btn btn-primary" type="submit">
+                        <a href="Delivery.html">Valider ma commande</a></button>
+            </form>
+            
+
+            <!-- Bas de la page -->
+            <footer class="col-12" id="img-rs">
+                <div class="row">
+                    <div class="col-2">
+                        <img id="footer_fb" src="Images/Reseaux_sociaux/Facebook.png" alt="facebook"><br>
+                        <a href="https://www.facebook.com">Facebook</a>
+                    </div>
+                    <div class="col-2">
+                        <img id="footer_insta" src="Images/Reseaux_sociaux/Instagram.png" alt="instagram"><br>
+                        <a href="https://www.instagram.com">Instagram</a>
+                    </div>
+                    <div class="col-2">
+                            <img id="footer_twit" src="Images/Reseaux_sociaux/Twitter.png" alt="twitter"><br>
+                        <a href="https://www.twitter.com">Twitter</a>
+                    </div>
+                    <div class="col-2">
+                            <img id="footer_snap" src="Images/Reseaux_sociaux/Snapchat.png" alt="snapchat"><br>
+                        <a href="https://www.snapchat.com">Snapchat</a>
+                    </div>
+                    <div class="col-2">
+                            <img id="footer_yt" src="Images/Reseaux_sociaux/You_tube.png" alt="you-tube"><br>
+                        <a href="https://www.youtube.com">You Tube</a>
+                    </div>
+                    <div class="col-2">
+                            <img id="footer_pint" src="Images/Reseaux_sociaux/Pinterest.png" alt="pinterest"><br>
+                        <a href="https://www.pinterest.com">Pinterest</a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="JS/JQ/jquery-3.4.1.min.js"></script>
+    <script src="JS/JQ/jquery-ui.min.js"></script>
+    <script src="JS/Script.js"></script>
+    </body>
+</html>
